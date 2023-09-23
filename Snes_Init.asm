@@ -17,7 +17,7 @@ Init:
 	sta 	$2100	; Brightness + screen enable register
 	stz 	$2101	; Sprite register (size + address in VRAM)
 	stz 	$2102	; Sprite registers (address of sprite memory [OAM])
-	stz 	$2103	;    "                       "
+	stz 	$2103	; "                       "
 	stz 	$2105	; Mode 0, = Graphic mode register
 	stz 	$2106	; No planes, no mosaic, = Mosaic register
 	stz 	$2107	; Plane 0 map VRAM location
@@ -29,13 +29,13 @@ Init:
 	stz 	$210D	; Plane 0 scroll x (first 8 bits)
 	stz 	$210D	; Plane 0 scroll x (last 3 bits) #$0 - #$07ff
 	lda 	#$FF	; The top pixel drawn on the screen isn't the top one in the
-					; tilemap, it's the one above that.
+	; tilemap, it's the one above that.
 	sta 	$210E	; Plane 0 scroll y (first 8 bits)
 	sta 	$2110	; Plane 1 scroll y (first 8 bits)
 	sta 	$2112	; Plane 2 scroll y (first 8 bits)
 	sta 	$2114	; Plane 3 scroll y (first 8 bits)
 	lda 	#$07	; Since this could get quite annoying, it's better to edit
-					; the scrolling registers to fix this.
+	; the scrolling registers to fix this.
 	sta 	$210E	; Plane 0 scroll y (last 3 bits) #$0 - #$07ff
 	sta 	$2110	; Plane 1 scroll y (last 3 bits) #$0 - #$07ff
 	sta 	$2112	; Plane 2 scroll y (last 3 bits) #$0 - #$07ff

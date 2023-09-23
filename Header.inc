@@ -11,8 +11,7 @@
 	ID 	"SNES"	; 1-4 letter string, just leave it as "SNES"
 
 	NAME 	"SNES Project Template"	; Program title, can't be longer than 21
-									; characters.  "123456789012345678901": use
-									; spaces for unused characters.
+	; characters.  "123456789012345678901": use spaces for unused characters.
 
 	SLOWROM
 	LOROM
@@ -22,10 +21,9 @@
 	ROMSIZE 	$08	; $08 = 2 Mbits
 	SRAMSIZE 	$00	; No SRAM
 	COUNTRY 	$00	; $01 = U.S., $00 = Japan, $02 = Australia, Europe, Oceania
-					; and Asia, $03 = Sweden, $04 = Finland, $05 = Denmark, $06
-					; = France, $07 = Holland, $08 = Spain, $09 = Germany,
-					; Austria and Switzerland, $0A = Italy, $0B = Hong Kong and
-					; China, $0C = Indonesia, $0D = Korea...
+	; Holland, $08 = Spain, $09 = Germany, and Asia, $03 = Sweden, $04 = 
+	; Finland, $05 = Denmark, $06 = France, $07 = Austria and Switzerland, $0A =
+	; Italy, $0B = Hong Kong and China, $0C = Indonesia, $0D = Korea...
 	LICENSEECODE 	$00	; Usually $00
 	VERSION 	$00	; $00 = 1.00, $01 = 1.01, etc.
 .ENDSNES
@@ -56,4 +54,4 @@ EmptyHandler:
 .ENDS
 
 .EMPTYFILL $00 ; Fill unused space with $00, opcode for BRK.  Will crash the
-			   ; SNES if it's executed
+; SNES if it's executed
