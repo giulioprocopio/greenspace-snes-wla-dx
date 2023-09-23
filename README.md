@@ -6,3 +6,8 @@ the WLA-DX 65816 assembler.
 It contains a demo `Greenspace.asm` program that displays a simple green
 background.  The `Makefile` can be used to assemble the program into a
 `Greenspace.sfc` ROM file, which can be run in an emulator or on real hardware.
+
+```sh
+git clone https://github.com/giulioprocopio/snes-project-template.git
+make Greenspace.smc
+```
