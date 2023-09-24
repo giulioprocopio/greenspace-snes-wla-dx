@@ -15,9 +15,9 @@ Start:
 	sep 	#$20
 	lda 	#%10000000
 	sta 	$2100
-	lda 	#%11100000	; Green low byte
+	lda 	#%11100000	; Green low byte gggrrrrr
 	sta 	$2122
-	lda 	#%00000000	; Green high byte
+	lda 	#%00000000	; Green high byte 0bbbbbgg
 	sta 	$2122
 	lda 	#%00001111
 	sta 	$2100
