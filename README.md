@@ -9,5 +9,6 @@ background.  The `Makefile` can be used to assemble the program into a
 
 ```sh
 git clone https://github.com/giulioprocopio/snes-project-template.git
+cd snes-project-template
 make Greenspace.smc
 ```
