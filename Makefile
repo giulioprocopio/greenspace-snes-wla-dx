@@ -1,3 +1,3 @@
-Greenspace.smc: Greenspace.asm Greenspace.link
-	wla-65816 -o Greenspace.obj Greenspace.asm
-	wlalink Greenspace.link Greenspace.smc
+greenspace.smc: greenspace.asm greenspace.link
+	wla-65816 -o greenspace.o greenspace.asm
+	wlalink greenspace.link greenspace.smc

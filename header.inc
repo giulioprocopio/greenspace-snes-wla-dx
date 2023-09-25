@@ -10,7 +10,7 @@
 .SNESHEADER
 	ID 	"SNES"	; 1-4 letter string, just leave it as "SNES"
 
-	NAME 	"SNES Project Template"	; Program title, can't be longer than 21
+	NAME 	"Greenspace           "	; Program title, can't be longer than 21
 	; characters.  "123456789012345678901": use spaces for unused characters.
 
 	SLOWROM

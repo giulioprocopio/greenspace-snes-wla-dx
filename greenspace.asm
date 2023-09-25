@@ -1,5 +1,5 @@
-.include "Header.inc"
-.include "Snes_Init.asm"
+.include "header.inc"
+.include "snes_init.asm"
 
 ; Needed to satisfy the interrupt definition in header.inc.
 VBlank:
